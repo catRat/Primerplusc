@@ -334,11 +334,14 @@ while(expression)
 	statement
 relational expresssion relational operator
 
-C99提供表示真/假的变量的类型，_Bool类型。
+新的_Bool类型
 
-for
+C99专门为这种类型的变量添加了_Bool类型。C99还提供了一个stdbool.和头文件。包含这个头文件可以使用bool来代替_Bool，并把true和false定义成值为1和0的符号常量。在程序中包含这个头文件可以写出C++兼容的代码，因为C++把bool、true和false定义为关键字。
 
-do while
+关系运算符的优先级
+
+关系运算符的优先级要低于包括+和-在内的算符运算符，但是要高于赋值运算符。
+
 
 我们需要一些手段里控制和组织程序中的项目，比如if和switch，当处理一些更复杂的任务。
 
