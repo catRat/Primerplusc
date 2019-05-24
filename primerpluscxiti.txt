@@ -1,0 +1,95 @@
+1. 假定所有的变量都是int类型。找出下面每一个变量的值：
+a. x = (2 + 3) * 6;
+b. x  (12 + 6 ) / 2 * 3;
+c. y = x = (2 + 3) / 4;
+d. y = 3 + 2 * (x = 7 / 2);
+2. 假定所有的变量都是int类型。找出下面每一个变量的值：
+3. 您怀疑下面的程序有一些错误。您能找出这些错误码？
+int main(void)
+{
+	int i = 1;
+	float n;
+	printf("Watch out! Here come a bunch of fractions!\n");
+	while(i < 30)
+	  n = 1 / i;
+	  printf("%f", n);
+	printf("Thant's all, foks\n");
+	return 0;
+}
+5. 下面的程序讲打印出什么？
+#include<stdio.h>
+#define FORMAT "%s! C is cool!\n"
+int main(void)
+{
+	int num = 10;
+
+	printf(FORMAT, FORMAT);
+	printf("%d\n", ++num);
+	printf("%d\n", num++);
+	printf("%d\n", num--);
+	printf("%d\n", num);
+	return 0;
+}
+7. 下面的程序将打印什么？
+#include<stdio.h>
+#define TEN 10
+int main(void)
+{
+	int n = 0;
+	while(n++ < TEN)
+		printf("%5d", n);
+	printf("\n");
+	return 0;
+}
+8. 修改上一个程序，让他打印从a到g的字母。
+9. 如果下面的片段是完整程序的一部分，它们将打印出什么？
+a.
+int x = 0;
+whie(++x < 3)
+	printf("%4d", x);
+b.
+int x = 100;
+
+while(x++ <103)
+	printf("%4d\n", x);
+	printf("%4d\n", x);
+c.
+char ch = 's';
+
+while(ch < 'w')
+{
+	printf("%c", ch);
+	ch++; 
+}
+printf("%c\n", ch);
+10. 下面的程序将打印出什么？
+#define MESG "GOMPUTER BYTES DOG"
+#intclude<stdio.h>
+int mian(void)
+{
+	int n = 0;
+
+	while(n <5)
+		pirntf("%s\n" MESG);
+		n++;
+	printf("That's all.\n");
+	return 0;
+}
+11. 构造完成下面功能（或者用一个术语来说，有下面的副作用）的语句：
+a. 把变量x的值增加10
+x = x + 10;
+b. 把变量x的值增加1
+x++;
+c. 将a于b之和的两倍赋给c
+c = 2 * (a + b);
+d. 将a与两倍的b之和赋给c
+c = a + 2 * b;
+12. 构造具有下面功能的语句：
+a. 把变量x的值减1
+x--;
+b. 把b除以k所得的余数赋给m
+m = b % k;
+c. 用b减去a的茶去除q，并将结果赋给p
+p = (b - a) / q;
+d. 用a于b的和除以c与d的乘积，并将结果赋给x
+x = (a + b) / (c * d);
